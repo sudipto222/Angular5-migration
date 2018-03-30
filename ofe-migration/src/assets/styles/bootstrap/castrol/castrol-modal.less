@@ -1,0 +1,64 @@
+//marius cornaciu
+//added modal scroll only for modal body and not for document body
+//modal centering
+//.no-padding class for modal body padding 0
+.modal-open {
+  & .modal {
+    margin: 0 auto;
+    overflow: hidden;
+    & .modal-content {
+      border-radius: 2px;
+    }
+    & .modal-header {
+      background-color: #f2f2f2;
+      height: 44px;
+      text-align: left;
+      font-family: castrol-regular, helvetica neue, helvetica, freesans, sans-serif;
+      padding: 10px 15px;
+      border-radius: 2px 2px 0 0;
+      & h2 {
+        margin: 0;
+        line-height: 1;
+        color: #525759;
+      }
+      &.close:focus {
+        outline: none;
+      }
+    }
+    & .modal-body {
+      overflow-y: auto;
+      max-height: 400px;
+      &.no-padding {
+        padding: 0;
+      }
+    }
+    & .modal-footer {
+      text-align: center;
+    }
+  }
+}
+
+// VERTICAL CENTRING OF MODAL - requires adding helper div and class to standard modal structure. 
+// http://stackoverflow.com/a/24829651
+
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none; /* This makes sure that we can still click outside of the modal to close it */
+    padding: 10px;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    //height:inherit; // This style came from the stackoverflow answer but was making all the modals fixed height, which we dont want.
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events: all;
+}

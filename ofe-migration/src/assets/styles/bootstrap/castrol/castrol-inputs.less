@@ -1,0 +1,20 @@
+input {
+  border: 1px solid #ccc;
+  border-color: @default-input-border-color;
+  border-radius: @border-radius-small;
+  height: @default-input-height;
+  padding-left: @input-padding-left;
+  padding-right: @input-padding-right;
+  padding-top: @input-padding-top;
+  padding-bottom: @input-padding-bottom;
+  font-size: @default-input-font-size;
+  &.invalid {
+    border-color: @input-invalid-border-color;
+  }
+  &.valid {
+    border-color: @input-valid-border-color;
+  }
+  &:focus {
+    border: 1px solid #525759;
+  }
+}

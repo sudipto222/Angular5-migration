@@ -1,0 +1,60 @@
+.btn {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  height: 40px;
+  padding: 8px 16px;
+  .castrolFont;
+  border: 0;
+  //Reset disabled
+  &.disabled, &[disabled], fieldset[disabled] & {
+    opacity: 1;
+    filter: none;
+  }
+  &:focus, &:active:focus {
+    outline: 0;
+  }
+}
+
+//Primary Buttons
+.btn-primary {
+  &:hover, &:focus {
+    background-color: #117A41;
+    border-color: #117A41;
+  }
+  &:active, &:active:hover, &:active:focus {
+    box-shadow: none;
+    background-color: #129F58;
+    border-color: #129F58;
+  }
+  &.disabled, &[disabled] {
+    background-color: @btn-primary-disabled-bg;
+    border-color: @btn-primary-disabled-bg;
+    &:hover, &:focus, &:active, &:active:focus {
+      background-color: @btn-primary-disabled-bg;
+      border-color: @btn-primary-disabled-bg;
+    }
+  }
+}
+
+//Neutral Buttons
+.btn-default {
+  border-width: 1px;
+  &:hover, &:focus {
+    background-color: @btn-default-hover;
+    border-color: #cccccc;
+    background-color: #fff;
+    color: @castrol-green;
+  }
+  &:active, &.active, &:active:focus {
+    box-shadow: none;
+    background-color: @btn-default-hover;
+    border-color: #525759;
+  }
+  &.disabled, &[disabled] {
+    color: @btn-default-disabled;
+    background-color: @btn-default-bg;
+    &:hover {
+      background-color: @btn-default-bg;
+    }
+  }
+}

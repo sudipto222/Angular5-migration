@@ -1,0 +1,59 @@
+// For reference: http://www.sitepoint.com/replacing-radio-buttons-without-replacing-radio-buttons/
+
+/* Hide standard radio buttons without removing accessibility */
+input[type="radio"] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+/* Target the label adjacent to the radio button  */
+input[type="radio"] + label {
+    font-weight: normal; //bootstrap makes font-weight bold by default for some reason
+    cursor: pointer;
+}
+/* Add a radio button as a circular :before element */
+input[type="radio"] + label:before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    vertical-align: -0.45em;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1px #cccccc;
+    transition: 0.5s ease background;
+    margin: 3px 8px 3px 0;
+    box-sizing: initial;
+}
+
+/* the checked style of custom radio */
+input[type="radio"]:checked + label:before {
+    box-shadow: 0 0 0 1px #cccccc;
+    background: #018b46;
+}
+/* the focus style of custom radio */
+input[type="radio"]:focus + label:before {
+    box-shadow: 0 0 0 1px #525759;
+}
+
+/* IE8 styles - NEEDS TESTING
+to remove custom radio and display normal one */
+.ie8 input[type="radio"] {
+    clip: auto;
+    width: 20px;
+    height: 20px;
+    overflow: initial;
+    margin-top:5px;
+    margin-left:0px;
+    margin-right:0px;
+    position:static;
+    vertical-align: -0.45em;
+}
+.ie8 input[type="radio"] + label:before {
+    display: none;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>CartIcon_32x32</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="-179" y="-59" width="343" height="140" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="343" height="140" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Mobile-Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CartIcon_32x32">
+            <g id="Group-36">
+                <rect id="Rectangle" x="0" y="0" width="32" height="32"></rect>
+                <g id="Group-33" transform="translate(2.000000, 8.000000)">
+                    <g id="Group-32" transform="translate(9.000000, 15.000000)" fill="#FFFFFF">
+                        <path d="M2.5,5 C3.88071187,5 5,3.88071187 5,2.5 C5,1.11928813 3.88071187,0 2.5,0 C1.11928813,0 0,1.11928813 0,2.5 C0,3.88071187 1.11928813,5 2.5,5 Z" id="Oval"></path>
+                    </g>
+                    <g id="Group-32-Copy" transform="translate(21.000000, 15.000000)" fill="#FFFFFF">
+                        <path d="M2.5,5 C3.88071187,5 5,3.88071187 5,2.5 C5,1.11928813 3.88071187,0 2.5,0 C1.11928813,0 0,1.11928813 0,2.5 C0,3.88071187 1.11928813,5 2.5,5 Z" id="Oval"></path>
+                    </g>
+                    <polyline id="Path-2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="0 0.0581423176 4.49724415 0 10.6992772 12 24.046318 12 28 3.32816153"></polyline>
+                </g>
+            </g>
+        </g>
+        <use id="Rectangle-12" stroke="#525759" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+    </g>
+</svg>
