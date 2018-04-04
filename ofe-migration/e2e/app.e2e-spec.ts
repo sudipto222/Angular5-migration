@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('ofe-migration App', () => {
+describe('castrol App', () => {
   let page: AppPage;
 
   beforeEach(() => {

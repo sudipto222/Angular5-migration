@@ -1,0 +1,63 @@
+<div style="background-image:url('/assets/header-image.jpg')">
+  <header class="header" ng-controller="HeaderController">
+    <button type="button" class="custom-toggle-icon" style="background: none; border: none;width: 50px;height: 50px;color: #fff;outline: none;"
+      (click)="openNav()">
+      <i class="glyphicon glyphicon-align-left"></i>
+    </button>
+    <div class="container">
+      <div class="container">
+        <div class="logo-section">
+          <div class="logo-content">
+            <img src="/assets/castrol-logo.svg" class="logo-img">
+            <h1 class="logo-title">Castrol Fast Lane</h1>
+          </div>
+          <div class="signup-btn-container">
+            <a href="#">Sign Out</a>
+          </div>
+        </div>
+
+        <div class="form">
+          <form class="search-field">
+            <input type="text" class="search-query form-control" placeholder="Type to search Castrol products..." />
+            <i class="glyphicon glyphicon-search search-icon"></i>
+          </form>
+        </div>
+        <div class="nav-container" style="text-align: center;margin: 40px 0 0 0;height: 55px;">
+          <div class="col-center" style="display: inline-flex">
+            <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false" (click)="showProducts()">
+                    Products
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Trade Schemes</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+  </header>
+  <div *ngIf="isShowProduct">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>

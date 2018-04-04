@@ -1,0 +1,320 @@
+@media screen and (min-width: 950px) {
+.header {
+  opacity: 0.9;
+  background-color: #018b46;
+  font-family: castrol-regular, helvetica neue,helvetica,freesans, sans-serif;
+  position: relative;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.24), 0 0 4px 0 rgba(0,0,0,0.12);
+}
+
+.logo-section{
+display: flex;
+}
+
+.custom-toggle-icon{
+display: none;
+}
+
+.logo-content{
+max-width: 400px;
+margin: 0 auto;
+padding-top: 50px;
+display: flex;
+}
+
+.logo-img{
+height: 28px;
+margin-left: 125px;
+}
+
+.logo-title{
+font-family: castrol-regular, helvetica neue, helvetica, freesans, sans-serif;
+-webkit-font-smoothing: antialiased;
+color: #fff;
+font-size: 16px;
+margin: 0;
+margin-left: 8px;
+/* padding: 3px 0px 3px 0; */
+line-height: 1.6;
+vertical-align: middle;
+border-left: 1px solid #fff;
+padding-left: 10px;
+}
+
+.signup-btn-container{
+padding-top: 50px;
+padding-right: 70px;
+}
+
+.form{
+width: 30%;
+  margin: 0 auto;
+}
+
+.search-query{
+margin: 0 auto;
+  margin-top: 30px;
+  width: 100%;
+}
+.search-field{
+margin-top: 45px;
+width: 130%;
+/* display: flex; */
+margin-left: -50px;
+}
+.search-icon{
+float: right;
+top: -23px;
+left: -5px;
+color: #999;
+}
+
+.signup-btn-container a{
+color: #fff;
+font-family: castrol-regular, helvetica neue,helvetica,freesans, sans-serif;
+}
+
+.custom-navbar ul li {
+padding: 0 5px;
+}
+.custom-navbar ul li a{
+color: #fff;
+}
+
+.custom-navbar ul li a:hover{
+transition: 0.3s;
+border-bottom: 2px solid #fff;
+}
+
+.custom-navbar .navbar-collapse{
+margin-top: -2px;
+}
+
+
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #fff;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+
+@media (max-width: 992px) {
+.header {
+  display: flex;
+  padding-bottom: 15px;
+}
+.logo-content,.signup-btn-container{
+  padding-top: 10px;
+}
+
+.nav-container{
+  display: none;
+}
+.custom-toggle-icon{
+  display: block;
+}
+
+.custom-navbar{
+  display: none;
+}
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 940px) {
+
+
+
+.header {
+    background-color: #018b46;
+    font-family: castrol-regular, helvetica neue,helvetica,freesans, sans-serif;
+    position: relative;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.24), 0 0 4px 0 rgba(0,0,0,0.12);
+  }
+
+.logo-section{
+  display: flex;
+}
+
+.custom-toggle-icon{
+  display: none;
+}
+
+.logo-content{
+  max-width: 310px;
+  margin: 0 auto;
+  padding-top: 50px;
+  display: flex;
+}
+
+.logo-img{
+  height: 22px;
+}
+
+.logo-title{
+  color: #fff;
+  font-family: fantasy;
+  font-size: 13px;
+  margin: 0;
+  margin-left: 8px;
+  /* padding: 3px 0px 3px -1px; */
+  line-height: 1.6;
+  vertical-align: middle;
+  border-left: 1px solid #fff;
+  padding-left: 10px;
+}
+
+.signup-btn-container{
+  padding-top: 50px;
+}
+
+.form{
+  width: 100%;
+  margin-left: -15px;
+  margin: 0 auto;
+}
+
+.search-query{
+  margin: 0 auto;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.search-icon{
+  float: right;
+  top: -23px;
+  left: -5px;
+  color: #999;
+}
+
+.signup-btn-container a{
+  color: #fff;
+  font-family: castrol-regular, helvetica neue,helvetica,freesans, sans-serif;
+}
+
+.custom-navbar ul li {
+  padding: 0 5px;
+}
+.custom-navbar ul li a{
+  color: #fff;
+}
+
+.custom-navbar ul li a:hover{
+  transition: 0.3s;
+  border-bottom: 2px solid #fff;
+}
+
+.custom-navbar .navbar-collapse{
+  margin-top: -2px;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+
+@media (max-width: 992px) {
+  .header {
+    display: flex;
+    padding-bottom: 15px;
+  }
+  .logo-content,.signup-btn-container{
+    padding-top: 13px;
+  }
+
+  .nav-container{
+    display: none;
+  }
+  .custom-toggle-icon{
+    display: block;
+  }
+
+  .custom-navbar{
+    display: none;
+  }
+
+}
+
+}
